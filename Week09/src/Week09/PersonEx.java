@@ -1,16 +1,14 @@
 package Week09;
 
 public class PersonEx {
-	static final double FEET_CONSTANT = 30.48;
-	
-	final String nation = "Korea";
-	final String ssn;
-	String name;
-	double height;
-	
-	public PersonEx(String ssn, String name, double height) {
-		this.ssn		= ssn;
-		this.name	= name;
-		this.height	= height;
+	public static void main(String[] args) {
+		Person p1 = new Person("123456-123456", "홍길동", 6.1);
+		
+		System.out.println(p1.nation);
+		System.out.println(p1.ssn);
+		System.out.println(p1.name);
+		System.out.println(p1.height*Person.FEET_CONSTANT + "cm");
+		
+		p1.name = "진달래";
 	}
 }
